@@ -52,7 +52,7 @@ public class Notepad extends javax.swing.JFrame {
         paste = new javax.swing.JMenuItem();
         delete = new javax.swing.JMenuItem();
         sep_2 = new javax.swing.JPopupMenu.Separator();
-        searchGoogle = new javax.swing.JMenuItem();
+        searchOnDictionary = new javax.swing.JMenuItem();
         find = new javax.swing.JMenuItem();
         findNext = new javax.swing.JMenuItem();
         findPrevious = new javax.swing.JMenuItem();
@@ -84,21 +84,21 @@ public class Notepad extends javax.swing.JFrame {
         textArea.setRows(5);
         scrollPane.setViewportView(textArea);
 
-        alignLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/align_left.png"))); // NOI18N
+        alignLeft.setIcon(new javax.swing.ImageIcon("D:\\GitProjects\\JavaNotepad\\src\\main\\align_left.png")); // NOI18N
         alignLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alignLeftActionPerformed(evt);
             }
         });
 
-        alignJustified.setIcon(new javax.swing.ImageIcon(getClass().getResource("/align_justified.png"))); // NOI18N
+        alignJustified.setIcon(new javax.swing.ImageIcon("D:\\GitProjects\\JavaNotepad\\src\\main\\align_justified.png")); // NOI18N
         alignJustified.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alignJustifiedActionPerformed(evt);
             }
         });
 
-        alignRight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/align_right.png"))); // NOI18N
+        alignRight.setIcon(new javax.swing.ImageIcon("D:\\GitProjects\\JavaNotepad\\src\\main\\align_right.png")); // NOI18N
         alignRight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alignRightActionPerformed(evt);
@@ -178,14 +178,14 @@ public class Notepad extends javax.swing.JFrame {
         editMenu.add(delete);
         editMenu.add(sep_2);
 
-        searchGoogle.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
-        searchGoogle.setText("Search on Dictionary");
-        searchGoogle.addActionListener(new java.awt.event.ActionListener() {
+        searchOnDictionary.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        searchOnDictionary.setText("Search on Dictionary");
+        searchOnDictionary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchGoogleActionPerformed(evt);
+                searchOnDictionaryActionPerformed(evt);
             }
         });
-        editMenu.add(searchGoogle);
+        editMenu.add(searchOnDictionary);
 
         find.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
         find.setText("Find...");
@@ -288,9 +288,9 @@ public class Notepad extends javax.swing.JFrame {
         operationExecuter.executeStrategy(new Copy(this));
     }//GEN-LAST:event_copyActionPerformed
 
-    private void searchGoogleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchGoogleActionPerformed
+    private void searchOnDictionaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchOnDictionaryActionPerformed
         operationExecuter.executeStrategy(new SearchOnDictionary(this));  
-    }//GEN-LAST:event_searchGoogleActionPerformed
+    }//GEN-LAST:event_searchOnDictionaryActionPerformed
 
     private void selectAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectAllActionPerformed
         findWindow.setText(textArea.getText());
@@ -357,7 +357,7 @@ public class Notepad extends javax.swing.JFrame {
     private javax.swing.JMenuItem paste;
     private javax.swing.JMenuItem replace;
     private javax.swing.JScrollPane scrollPane;
-    private javax.swing.JMenuItem searchGoogle;
+    private javax.swing.JMenuItem searchOnDictionary;
     private javax.swing.JMenuItem selectAll;
     private javax.swing.JPopupMenu.Separator sep1;
     private javax.swing.JPopupMenu.Separator sep_1;

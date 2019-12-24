@@ -155,7 +155,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep_2">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="searchGoogle">
+            <MenuItem class="javax.swing.JMenuItem" name="searchOnDictionary">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+E"/>
@@ -163,7 +163,7 @@
                 <Property name="text" type="java.lang.String" value="Search on Dictionary"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchGoogleActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchOnDictionaryActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="find">
@@ -300,7 +300,7 @@
     <Component class="javax.swing.JButton" name="alignLeft">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/align_left.png"/>
+          <Image iconType="2" name="D:\GitProjects\JavaNotepad\src\main\align_left.png"/>
         </Property>
       </Properties>
       <Events>
@@ -310,7 +310,7 @@
     <Component class="javax.swing.JButton" name="alignJustified">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/align_justified.png"/>
+          <Image iconType="2" name="D:\GitProjects\JavaNotepad\src\main\align_justified.png"/>
         </Property>
       </Properties>
       <Events>
@@ -320,7 +320,7 @@
     <Component class="javax.swing.JButton" name="alignRight">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/align_right.png"/>
+          <Image iconType="2" name="D:\GitProjects\JavaNotepad\src\main\align_right.png"/>
         </Property>
       </Properties>
       <Events>
